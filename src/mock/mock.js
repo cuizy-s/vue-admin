@@ -67,7 +67,7 @@ export default {
         return true;
       });
       let total = mockUsers.length;
-      mockUsers = mockUsers.filter((u, index) => index < 20 * page && index >= 20 * (page - 1));
+      mockUsers = mockUsers.filter((u, index) => index < 2 * page && index >= 2 * (page - 1));
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve([200, {

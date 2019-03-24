@@ -75,7 +75,7 @@
 	export default {
 		data() {
 			return {
-				sysName:'VUEADMIN',
+				sysName:'ADMIN',
 				collapsed:false,
 				sysUserName: '',
 				sysUserAvatar: '',
@@ -201,7 +201,6 @@
 		}
 		.main {
 			display: flex;
-			// background: #324057;
 			position: absolute;
 			top: 60px;
 			bottom: 0px;
@@ -209,9 +208,6 @@
 			aside {
 				flex:0 0 230px;
 				width: 230px;
-				// position: absolute;
-				// top: 0px;
-				// bottom: 0px;
 				.el-menu{
 					height: 100%;
 				}
@@ -240,17 +236,16 @@
 				width: 230px;
 			}
 			.content-container {
-				// background: #f1f2f7;
 				flex:1;
-				// position: absolute;
-				// right: 0px;
-				// top: 0px;
-				// bottom: 0px;
-				// left: 230px;
 				overflow-y: scroll;
-				padding: 20px;
+				padding: 6px 20px 35px 20px;
+				line-height: 30px;
+				.el-breadcrumb {
+					line-height: 30px;
+				}
 				.breadcrumb-container {
-					//margin-bottom: 15px;
+					border-bottom: 1px solid #c5c2c2;
+					margin-bottom: 10px;
 					.title {
 						width: 200px;
 						float: left;
